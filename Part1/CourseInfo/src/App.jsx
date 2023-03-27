@@ -6,12 +6,13 @@ import Total from "./Components/Total";
 import Header from "./Components/Header";
 
 function App() {
-  const [count, setCount] = useState(0);
   const course = "Half Stack application development";
+
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <Header />
+      <Header course={course} />
       <Contents />
       <Total />
     </div>
